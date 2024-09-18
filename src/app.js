@@ -53,7 +53,7 @@ io.on("connection", (socket) => {
     try {
       const newProduct = await productManager.addProduct(productData);
       io.emit("productAdded", newProduct);
-      io.emit("productsUpdated", await productManager.getProducts());  // Asegúrate de que los productos estén actualizados
+      io.emit("productsUpdated", await productManager.getProducts());
     } catch (error) {
       socket.emit("productAddError", "Hubo un error al agregar el producto");
     }
@@ -64,7 +64,7 @@ io.on("connection", (socket) => {
     try {
       await productManager.deleteProduct(Number(productId));
       io.emit("productDeleted", "Producto eliminado exitosamente");
-      io.emit("productsUpdated", await productManager.getProducts()); // Emitir actualización de la lista
+      io.emit("productsUpdated", await productManager.getProducts());
     } catch (error) {
       socket.emit(
         "productDeleteError",

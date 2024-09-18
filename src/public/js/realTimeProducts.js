@@ -1,5 +1,4 @@
-// Cliente - Manejo de formularios para agregar y eliminar productos
-const socket = io(); // Inicializa la conexión con el servidor WebSocket
+const socket = io(); // Inicializo la conexión con el servidor WebSocket
 
 // Formulario para agregar productos
 const addProductForm = document.getElementById("addProductForm");
@@ -15,7 +14,7 @@ addProductForm.addEventListener("submit", (event) => {
     socket.emit("addProduct", productData);
 });
 
-// SweetAlert2 para notificación de éxito o error
+// SweetAlert2 para notificación satisfactoria o error
 socket.on("productAdded", (newProduct) => {
     Swal.fire({
         icon: "success",
@@ -25,7 +24,7 @@ socket.on("productAdded", (newProduct) => {
         showConfirmButton: false,
     });
 
-    // Actualizar el DOM agregando el nuevo producto directamente a la tabla
+    // Actualizo el DOM agregando el nuevo producto directamente a la tabla
     const tableBody = document.querySelector("tbody");
 
     // Crear una nueva fila con los datos del nuevo producto
@@ -45,7 +44,7 @@ socket.on("productAdded", (newProduct) => {
     // Agregar la nueva fila al final de la tabla
     tableBody.appendChild(row);
 
-    // Restablecer el formulario después de agregar el producto
+    // Restablezco el formulario después de agregar el producto
     addProductForm.reset();
 });
 

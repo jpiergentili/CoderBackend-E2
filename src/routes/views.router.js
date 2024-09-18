@@ -5,7 +5,7 @@ const router = Router();
 
 // Ruta para la vista de productos en tiempo real
 router.get('/realtimeproducts', async (req, res) => {
-    const products = await productManager.getProducts(); // Método para obtener todos los productos
+    const products = await productManager.getProducts();
     res.render("realTimeProducts", {
       products,
       title: "Mercadoliebre",
