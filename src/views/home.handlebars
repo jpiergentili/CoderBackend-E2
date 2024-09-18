@@ -1,0 +1,29 @@
+<div class="container">
+  <h2>Lista de Productos</h2>
+  <!-- Tabla de productos -->
+  <table class="table" style="width:100%">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Título</th>
+        <th>Descripción</th>
+        <th>Precio</th>
+        <th>Categoría</th>
+        <th>Stock</th>        
+      </tr>
+    </thead>
+    <tbody>
+      {{#each products}}
+        <tr>
+          <td>{{this.id}}</td>
+          <td>{{this.title}}</td>
+          <td>{{this.description}}</td>
+          <td>{{this.price}}</td>
+          <td>{{this.category}}</td>
+          <td>{{this.stock}}</td>          
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</div>
+<script src="/js/home.js"></script>

@@ -1,0 +1,68 @@
+[
+	{
+		"title": "Mantecol",
+		"description": "Comida",
+		"price": 300,
+		"thumbnail": "foto",
+		"stock": 50,
+		"id": 23,
+		"code": 3455,
+		"status": true,
+		"category": "Comida"
+	},
+	{
+		"title": "Queso",
+		"description": "Lacteos",
+		"price": 300,
+		"thumbnail": "foto",
+		"stock": 50,
+		"id": 29,
+		"code": 1657,
+		"status": true,
+		"category": "Lácteos"
+	},
+	{
+		"id": 1,
+		"title": "vigueta",
+		"description": "vigueta shap",
+		"price": "22222",
+		"thumbnails": "Foto vigueta",
+		"code": "454365",
+		"stock": "123123",
+		"category": "Construccion",
+		"status": true
+	},
+	{
+		"id": 2,
+		"title": "yerba",
+		"description": "yerba mate",
+		"price": "3000",
+		"thumbnails": "N/D",
+		"code": "56060606",
+		"stock": "100",
+		"category": "Infusiones",
+		"status": true
+	},
+	{
+		"id": 3,
+		"title": "Tira de asado",
+		"description": "Carne ideal para la parrila",
+		"price": "10000",
+		"thumbnails": "\"N/D",
+		"code": "6564",
+		"stock": "100",
+		"category": "Carnes",
+		"status": true
+	},
+	{
+		"id": 4,
+		"title": "mouse",
+		"description": "Mouse",
+		"price": "50000",
+		"thumbnails": "Foto",
+		"code": "77777",
+		"stock": "200",
+		"category": "Informatica",
+		"status": true
+	}
+]
